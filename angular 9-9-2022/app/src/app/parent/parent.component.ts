@@ -21,11 +21,5 @@ export class ParentComponent implements OnInit {
 
     this.fontsize = (type === 'increase') ? this.fontsize + 10 : this.fontsize - 10;
 
-    if (this.fontsize == 200) {
-      this.fontsize = this.default_size;
-    }
-    if (this.fontsize == 0) {
-      this.default_size = this.default_size;
-    }
   }
 }
