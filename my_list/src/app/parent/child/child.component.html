@@ -1,0 +1,7 @@
+<input type="text" #blank>
+<button (click)="myData(blank.value)">childbutton</button>
+<h1>parent to child data</h1>
+<ul *ngFor="let parentdata of myInput">
+
+    <li>{{parentdata}}</li>
+</ul>

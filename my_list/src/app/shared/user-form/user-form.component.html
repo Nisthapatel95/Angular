@@ -1,0 +1,27 @@
+<div class="container mt-5 border">
+  <form #loginForm="ngForm" (ngSubmit)="getform(loginForm.value)">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">First Name</label>
+      <input type="text" class="form-control" name="firstname" [(ngModel)]="user.firstname" #firstNmae="ngModel"
+        required="">
+      <p *ngIf="firstNmae.touched && firstNmae.invalid" class="text-danger"> This fiels is required</p>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Last Name</label>
+      <input type="text" class="form-control" name="lastname" [(ngModel)]="user.lastname" #lastNmae="ngModel"
+        required="">
+      <p *ngIf="lastNmae.touched && lastNmae.invalid" class="text-danger"> This fiels is required</p>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email</label>
+      <input type="text" class="form-control" name="email" ngModel>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Number</label>
+      <input type="text" class="form-control" name="Number" ngModel>
+    </div>
+
+
+    <button type="submit" class="btn btn-primary ">Submit</button>
+  </form>
+</div>
