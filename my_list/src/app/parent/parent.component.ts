@@ -10,6 +10,7 @@ export class ParentComponent implements OnInit {
   public newarr = ['Nistha', 'yag']
   public child: string[];
   public newchild = ['yag', 'smit']
+ 
   constructor() {
     this.child = [];
    
@@ -19,7 +20,8 @@ export class ParentComponent implements OnInit {
 
 
   getchild(data: string) {
-   this.newchild.push(data);
+  
+     this.newchild.push(data);
   }
   getValue(data: string) {
     this.newarr.push(data);

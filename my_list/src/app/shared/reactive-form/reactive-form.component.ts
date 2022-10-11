@@ -32,7 +32,7 @@ export class ReactiveFormComponent implements OnInit {
     return this.userForm.controls;
   }
 
-  getFormData() {
+   getFormData() {
 
     this.userForm.value;
     console.log(this.userForm);

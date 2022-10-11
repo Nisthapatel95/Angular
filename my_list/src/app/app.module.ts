@@ -19,6 +19,7 @@ import { ChildComponent } from './parent/child/child.component';
   declarations: [
     AppComponent,
     ParentComponent,
+    ChildComponent,
     HomeComponent,
     SidbarComponent,
     FooterComponent,
