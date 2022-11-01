@@ -1,0 +1,21 @@
+{
+    "employee": [
+      {
+        "name": "vishnu",
+        "gender": "male",
+        "dob": "2022-10-13",
+        "salary": "5001",
+        "id": 3
+      }
+    ],
+    "user": [
+      {
+        "firstName": "nistha",
+        "lastName": "patel",
+        "username": "nistha",
+        "password": "123456",
+        "role": "user",
+        "id": 4
+      }
+    ]
+  }

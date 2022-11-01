@@ -12,6 +12,11 @@ import { FooterComponent } from './footer/footer.component';
 import { CoreModule } from './core/core.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ChildComponent } from './parent/child/child.component';
+import { LoginComponent } from './user/login/login.component';
+import { RegisterComponent } from './user/register/register.component';
+import { UserService } from './user/user.service';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -24,6 +29,8 @@ import { ChildComponent } from './parent/child/child.component';
     SidbarComponent,
     FooterComponent,
     PageNotFoundComponent,
+    LoginComponent,
+    RegisterComponent,
     
 
   ],
@@ -32,12 +39,14 @@ import { ChildComponent } from './parent/child/child.component';
     AppRoutingModule,
     DirectivesTypeModule,
     CoreModule,
+    HttpClientModule,
+    ReactiveFormsModule
 
 
     
 
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
