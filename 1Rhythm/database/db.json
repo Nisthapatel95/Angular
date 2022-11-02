@@ -1,0 +1,12 @@
+{
+    "user": [
+      {
+        "firstName": "nistha",
+        "lastName": "patel",
+        "username": "nistha",
+        "password": "123456",
+        "role": "user",
+        "id": 4
+      }
+    ]
+  }
